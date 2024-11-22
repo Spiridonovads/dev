@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DS</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!--HEADER-->
+      <header id="header">
+        <div class="header__wrapper wrapper">
+          <!--left side-->
+          <nav>
+            <ul class="header-nav__list">
+              <li>
+                <a href="/"><img alt="logo" src="./images/logo.svg" /></a>
+              </li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+          <!--right side-->
+          <nav>
+            <ul class="header-nav__list">
+              <li @click="showPopup = true">Sign up</li>
+              <li>
+                <button
+                  type="button"
+                  class="button button-full header-nav__button"
+                >
+                  Log in
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--MAIN-->
+      <main>
+        <!--INTRO-->
+        <section id="intro">
+          <div class="intro__wrapper wrapper">
+            <!--text-->
+            <div class="intro__content">
+              <div>
+                <h1>awesome html5 games</h1>
+                <h1>- NO MONEY!</h1>
+              </div>
+              <div>
+                <p class="intro__text">Your perfect place to get some</p>
+                <p class="intro__text">fun and excitement</p>
+              </div>
+              <div>
+                <ul class="intro__buttons">
+                  <li>
+                    <button
+                      type="button"
+                      class="button button-transparent intro__button"
+                    >
+                      Log in
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="button button-full intro__button"
+                    >
+                      Play
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--form-->
+            <div class="intro__form">
+              <div class="intro__form__text">
+                <h3 class="intro__form__title">Create a free account now</h3>
+                <ul class="intro__form__icons">
+                  <li class="intro__form__li">
+                    <img src="./images/intro/form/1.svg" alt="icon1" />
+                    <div>
+                      <p class="intro__form__icon">1000+ Games</p>
+                      <p class="intro__form__icon">Available</p>
+                    </div>
+                  </li>
+                  <li class="intro__form__li">
+                    <img src="./images/intro/form/2.svg" alt="icon2" />
+                    <div>
+                      <p class="intro__form__icon">New game</p>
+                      <p class="intro__form__icon">Every week</p>
+                    </div>
+                  </li>
+                  <li class="intro__form__li">
+                    <img src="./images/intro/form/3.svg" alt="icon3" />
+                    <div>
+                      <p class="intro__form__icon">Support our</p>
+                      <p class="intro__form__icon">Users 24/7</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <form autocomplete="on" class="intro__form__register">
+                <input
+                  required
+                  class="input"
+                  type="text"
+                  placeholder="Firstname"
+                />
+                <input
+                  required
+                  class="input"
+                  type="text"
+                  placeholder="Lastname"
+                />
+                <input
+                  class="input intro__form__input--largest"
+                  type="email"
+                  placeholder="Email address"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="button button-full intro__form__register__button"
+                >
+                  Join now
+                </button>
+              </form>
+              <label class="label">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="subscribe"
+                  value="yes"
+                />
+                I accept the
+                <a class="link" href="#">Privacy Policy</a>
+              </label>
+            </div>
+          </div>
+        </section>
+        <!--GAMES-->
+        <section id="games">
+          <div class="games__wrapper wrapper">
+            <div class="games__info">
+              <div class="title">
+                <h2>Our Games</h2>
+                <p class="text">Get Virtual Welcome bonus after Sign Up</p>
+              </div>
+              <a href="#" class="link games__link">All games</a>
+            </div>
+            <div class="games__cards">
+              <!--left side-->
+              <ul class="games__cards--short-images-list">
+                <!--1-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game1"
+                    src="./images/games/short/1.jpg"
+                  />
+                  <h6>Double Jackpot</h6>
+                  <p class="games__author">NetentGames</p>
+                </li>
+                <!--2-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game2"
+                    src="./images/games/short/2.jpg"
+                  />
+                  <h6>All Aboard: Dynam...</h6>
+                  <p class="games__author">RushGameStudio</p>
+                </li>
+                <!--3-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game3"
+                    src="./images/games/short/3.jpg"
+                  />
+                  <h6>Book Of Tombs</h6>
+                  <p class="games__author">NetentGames</p>
+                </li>
+                <!--4-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game4"
+                    src="./images/games/short/4.jpg"
+                  />
+                  <h6>Rudolph’s Ride</h6>
+                  <p class="games__author">NetentGames</p>
+                </li>
+                <!--5-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game5"
+                    src="./images/games/short/5.jpg"
+                  />
+                  <h6>Starburst XXXtreme</h6>
+                  <p class="games__author">StarBurst Inc.</p>
+                </li>
+                <!--6-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game6"
+                    src="./images/games/short/6.jpg"
+                  />
+                  <h6>Black Diamond</h6>
+                  <p class="games__author">RushGameStudio</p>
+                </li>
+              </ul>
+
+              <!--right side-->
+
+              <ul class="games__cards--long-images-list">
+                <!--7-->
+                <li>
+                  <figure class="games__figure">
+                    <img
+                      class="games__img games__figure__img"
+                      alt="game7"
+                      src="./images/games/7.jpeg"
+                    />
+                    <figcaption class="games__figcaption">
+                      <h6>Dynamite Riches</h6>
+                      <h6>Megaways</h6>
+                      <p class="games__figcaption__text">
+                        Miners revealed a gain of €46,672 for Sandra M.! You
+                        too, dynamite the reels of the Red Tiger Daily Jackpot
+                        machines
+                      </p>
+                      <button type="button" class="button-light">
+                        Play now
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <!--8-->
+                <li>
+                  <figure class="games__figure">
+                    <img
+                      class="games__img games__figure__img"
+                      alt="game7"
+                      src="./images/games/8.jpeg"
+                    />
+                    <figcaption class="games__figcaption">
+                      <h6>Gator Gold Deluxe</h6>
+                      <h6>Gigablox</h6>
+                      <p class="games__figcaption__text">
+                        These swamps conceal many dangers but especially
+                        precious treasures. Will you be able to find them?
+                      </p>
+                      <button type="button" class="button-light">
+                        Play now
+                      </button>
+                    </figcaption>
+                  </figure>
+                </li>
+                <!--9-->
+                <li>
+                  <img
+                    class="games__img"
+                    alt="game9"
+                    src="./images/games/9.jpeg"
+                  />
+                  <div class="games__promo">
+                    <div class="games__promo__text">
+                      <h6>Our deals are not to be missed</h6>
+                      <p class="games__author">
+                        Discover a wide range of weekly promotions
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="button-light games_promo_button"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class="rules">
+              * We don't offer opportunities to play for real money. Our games
+              are free demo. All games were invented for entertainment purposes
+              only and do not offer real money prizes.
+            </p>
+            <!--CONTACT-->
+            <div class="contact__wrapper">
+              <article id="contact">
+                <div class="title">
+                  <h2>Contact us</h2>
+                  <p class="text">
+                    If you have some questions, send us a message
+                  </p>
+                </div>
+                <form autocomplete="on" class="contact__form">
+                  <input
+                    required
+                    class="input contact__input"
+                    type="text"
+                    placeholder="Firstname"
+                  />
+                  <input
+                    required
+                    class="input contact__input"
+                    type="text"
+                    placeholder="Email Address"
+                  />
+                  <textarea
+                    placeholder="Your message here..."
+                    class="input contact__input textarea"
+                  ></textarea>
+                  <div class="contact__label">
+                    <label class="label">
+                      <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="subscribe"
+                        value="yes"
+                      />
+                      I accept the
+                      <a class="link" href="#">Privacy Policy</a>
+                    </label>
+                    <button class="button button-full contact__button">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </article>
+              <img
+                class="contact__img"
+                src="./images/games/contact/contact.png"
+                alt="contact"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--FOOTER-->
+      <footer id="footer">
+        <div class="wrapper footer__wrapper">
+          <nav>
+            <ul class="footer_nav">
+              <li class="footer__li"><a href="#">Disclaimer</a></li>
+              <li class="footer__li">|</li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li class="footer__li">|</li>
+              <li><a href="#">Terms of Conditions</a></li>
+            </ul>
+          </nav>
+          <p class="rules footer_rules">
+            This site does not provide any form of online gambling and delivers
+            information for entertainment and research purposes only. The games
+            listed by Topwinningslots are intended for adult audience
+            entertainment (underage visitors are restricted) and do not offer
+            real money or prizes. Practicing online free games does not imply
+            future success at 'real money' gambling.
+          </p>
+          <div class="footer__media">
+            <span class="footer__media__text"
+              >2022 | © Lorem Inc. All Rights Reserved</span
+            >
+            <div class="footer__icons">
+              <a href="#">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.3553 3.74113C14.3655 3.88325 14.3655 4.02541 14.3655 4.16753C14.3655 8.50253 11.066 13.4975 5.03553 13.4975C3.17766 13.4975 1.45178 12.9594 0 12.0254C0.263969 12.0558 0.51775 12.066 0.791875 12.066C2.32484 12.066 3.73603 11.5483 4.86294 10.665C3.42131 10.6345 2.21319 9.69038 1.79694 8.39088C2 8.42131 2.20303 8.44163 2.41625 8.44163C2.71066 8.44163 3.00509 8.401 3.27919 8.32997C1.77666 8.02538 0.649719 6.7056 0.649719 5.11169V5.07109C1.08625 5.31475 1.59391 5.46703 2.13194 5.48731C1.24869 4.89847 0.670031 3.89341 0.670031 2.75634C0.670031 2.14722 0.832438 1.58884 1.11672 1.10153C2.73094 3.09138 5.15734 4.39084 7.87813 4.533C7.82738 4.28934 7.79691 4.03556 7.79691 3.78175C7.79691 1.97463 9.25884 0.502563 11.0761 0.502563C12.0203 0.502563 12.873 0.898501 13.472 1.53809C14.2131 1.39597 14.9238 1.12184 15.5533 0.74622C15.3096 1.50766 14.7918 2.14725 14.1116 2.55331C14.7715 2.48228 15.4111 2.2995 15.9999 2.04572C15.5533 2.69544 14.9949 3.27409 14.3553 3.74113Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.72311 9L9.16749 6.10437H6.38905V4.22531C6.38905 3.43313 6.77718 2.66094 8.02155 2.66094H9.28468V0.195625C9.28468 0.195625 8.13843 0 7.04249 0C4.75436 0 3.25874 1.38688 3.25874 3.8975V6.10437H0.715302V9H3.25874V16H6.38905V9H8.72311Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.00312 3.40623C5.01562 3.40623 3.41249 5.00935 3.41249 6.99685C3.41249 8.98435 5.01562 10.5875 7.00312 10.5875C8.99062 10.5875 10.5937 8.98435 10.5937 6.99685C10.5937 5.00935 8.99062 3.40623 7.00312 3.40623ZM7.00312 9.33123C5.71874 9.33123 4.66874 8.28435 4.66874 6.99685C4.66874 5.70935 5.71562 4.66248 7.00312 4.66248C8.29062 4.66248 9.33749 5.70935 9.33749 6.99685C9.33749 8.28435 8.28749 9.33123 7.00312 9.33123ZM11.5781 3.25935C11.5781 3.72498 11.2031 4.09685 10.7406 4.09685C10.275 4.09685 9.90312 3.72185 9.90312 3.25935C9.90312 2.79685 10.2781 2.42185 10.7406 2.42185C11.2031 2.42185 11.5781 2.79685 11.5781 3.25935ZM13.9562 4.10935C13.9031 2.98748 13.6469 1.99373 12.825 1.17498C12.0062 0.356225 11.0125 0.0999756 9.89062 0.0437256C8.73437 -0.0218994 5.26874 -0.0218994 4.11249 0.0437256C2.99374 0.0968506 1.99999 0.353101 1.17812 1.17185C0.356244 1.9906 0.103119 2.98435 0.0468689 4.10623C-0.0187561 5.26248 -0.0187561 8.7281 0.0468689 9.88435C0.0999939 11.0062 0.356244 12 1.17812 12.8187C1.99999 13.6375 2.99062 13.8937 4.11249 13.95C5.26874 14.0156 8.73437 14.0156 9.89062 13.95C11.0125 13.8968 12.0062 13.6406 12.825 12.8187C13.6437 12 13.9 11.0062 13.9562 9.88435C14.0219 8.7281 14.0219 5.2656 13.9562 4.10935ZM12.4625 11.125C12.2187 11.7375 11.7469 12.2094 11.1312 12.4562C10.2094 12.8219 8.02187 12.7375 7.00312 12.7375C5.98437 12.7375 3.79374 12.8187 2.87499 12.4562C2.26249 12.2125 1.79062 11.7406 1.54374 11.125C1.17812 10.2031 1.26249 8.0156 1.26249 6.99685C1.26249 5.9781 1.18124 3.78748 1.54374 2.86873C1.78749 2.25623 2.25937 1.78435 2.87499 1.53748C3.79687 1.17185 5.98437 1.25623 7.00312 1.25623C8.02187 1.25623 10.2125 1.17498 11.1312 1.53748C11.7437 1.78123 12.2156 2.2531 12.4625 2.86873C12.8281 3.7906 12.7437 5.9781 12.7437 6.99685C12.7437 8.0156 12.8281 10.2062 12.4625 11.125Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--LOADER-->
+      <div id="preloader" v-if="isLoading">
+        <div class="spinner"></div>
+      </div>
+      <!--POPUP-->
+      <div id="popup" :class="{ active: showPopup }">
+        <div class="popup-content">
+          <h3>Регистрация</h3>
+          <form @submit.prevent="submitForm" class="popup__form">
+            <input class="input" type="text" placeholder="Имя" required />
+            <input class="input" type="email" placeholder="Email" required />
+            <input
+              class="input"
+              type="password"
+              placeholder="Пароль"
+              required
+            />
+            <button type="submit" class="button button-full popup__button">
+              Зарегистрироваться
+            </button>
+          </form>
+          <button
+            class="button button-full popup__button"
+            @click="showPopup = false"
+          >
+            Закрыть
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
