@@ -241,6 +241,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  gap: 123px;
 }
 .intro__form__title {
   text-transform: uppercase;
@@ -528,4 +529,19 @@ img {
 }
 .popup__button {
   padding: 11px 22px;
+}
+
+@media (max-width: 800px) {
+  .games__cards {
+    flex-direction: column;
+  }
+  .games__wrapper {
+    top: 0;
+  }
+  #games {
+    height: 1350px;
+  }
+  .contact__img {
+    display: none;
+  }
 }
