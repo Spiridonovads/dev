@@ -172,6 +172,15 @@ img {
 .header-nav__button {
   padding: 9px 32px;
 }
+.header__register {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 21.92px;
+  color: white;
+  font-weight: 700;
+}
 
 /*интро*/
 #intro {
