@@ -27,7 +27,8 @@ html {
 }
 body {
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
+  font-size: calc(16px + 0.05vw);
+  line-height: calc(19.49px + 0.05vw);
   font-weight: 700;
   color: white;
   background-color: rgba(5, 13, 42, 1);
@@ -35,21 +36,17 @@ body {
 }
 h1 {
   text-transform: uppercase;
-  font-size: 48px;
-  line-height: 58.46px;
+  font-size: calc(48px + 0.05vw);
+  line-height: calc(58.46px + 0.05vw);
   text-align: center;
 }
 h2 {
-  font-size: 36px;
-  line-height: 43.85px;
+  font-size: calc(36px + 0.05vw);
+  line-height: calc(43.85px + 0.05vw);
 }
 h3 {
-  font-size: 22px;
-  line-height: 26.8px;
-}
-h6 {
-  font-size: 16px;
-  line-height: 19.49px;
+  font-size: calc(22px + 0.05vw);
+  line-height: calc(26.8px + 0.05vw);
 }
 ul,
 ol {
@@ -80,8 +77,8 @@ img {
   border-radius: 8px;
   color: white;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21.92px;
+  font-size: calc(18px + 0.05vw);
+  line-height: calc(21.92px + 0.05vw);
 }
 .button-transparent {
   border: 2px solid white;
@@ -96,10 +93,10 @@ img {
   background: rgba(72, 112, 255, 1);
   border-radius: 16px;
   border-style: none;
-  font-size: 10px;
+  font-size: calc(10px + 0.05vw);
   font-weight: 600;
   color: white;
-  padding: 5px 13px;
+  padding: calc(5px + 0.05vw) calc(13px + 0.05vw);
 }
 .input {
   max-width: 202px;
@@ -116,10 +113,10 @@ img {
 .textarea::placeholder {
   color: rgba(5, 13, 42, 1);
   opacity: 40%;
-  font-size: 16px;
+  font-size: calc(16px + 0.05vw);
   font-weight: 400;
-  padding-left: 14px;
-  padding-top: 12px;
+  padding-left: calc(14px + 0.05vw);
+  padding-top: calc(12px + 0.05vw);
   font-family: "Proxima Nova";
   font-weight: 400;
 }
@@ -130,26 +127,26 @@ img {
 }
 .text {
   font-weight: 400;
-  line-height: 19.49px;
+  line-height: calc(19.49px + 0.05vw);
 }
 .checkbox {
-  margin-top: 12px;
+  margin-top: calc(12px + 0.05vw);
   vertical-align: text-bottom;
 }
 .link {
   text-decoration: underline;
 }
 .label {
-  font-size: 14px;
-  line-height: 17.05px;
+  font-size: calc(14px + 0.05vw);
+  line-height: calc(17.05px + 0.05vw);
   font-weight: 400;
 }
 .rules {
-  font-size: 14px;
-  line-height: 17.05px;
+  font-size: calc(14px + 0.05vw);
+  line-height: calc(17.05px + 0.05vw);
   font-weight: 400;
   max-width: 655px;
-  margin-bottom: 50px;
+  margin-bottom: calc(50px + 0.05vw);
 }
 
 /*хедер*/
@@ -166,18 +163,19 @@ img {
 }
 .header-nav__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: calc(1070px * 0.03);
 }
 .header-nav__button {
-  padding: 9px 32px;
+  padding: calc(9px + 0.05vw) calc(32px + 0.05vw);
 }
 .header__register {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  font-size: 18px;
-  line-height: 21.92px;
+  font-size: calc(18px + 0.05vw);
+  line-height: calc(21.92px + 0.05vw);
   color: white;
   font-weight: 700;
 }
@@ -185,7 +183,7 @@ img {
 /*интро*/
 #intro {
   width: 100vw;
-  height: 674px;
+  min-height: 674px;
   background-image: url("./images/intro/intro.png");
   background-size: 105% 140%;
   background-position: center;
@@ -193,7 +191,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 32px;
+  padding-top: calc(32px + 0.05vw);
   z-index: 4;
 }
 .intro__wrapper {
@@ -206,20 +204,20 @@ img {
   align-items: center;
 }
 .intro__text {
-  font-size: 28px;
+  font-size: calc(28px + 0.05vw);
   font-weight: 400;
-  line-height: 34.1px;
+  line-height: calc(34.1px + 0.05vw);
   text-align: center;
 }
 .intro__buttons {
-  margin-top: 24px;
-  margin-bottom: 59px;
+  margin-top: calc(24px + 0.05vw);
+  margin-bottom: calc(59px + 0.05vw);
   display: flex;
   align-items: center;
-  column-gap: 16px;
+  gap: calc(16px + 0.05vw);
 }
 .intro__button {
-  padding: 11px 62px;
+  padding: calc(11px + 0.05vw) calc(62px + 0.05vw);
 }
 /*форма*/
 .intro__form {
@@ -232,45 +230,45 @@ img {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(58, 64, 84, 1);
   border-radius: 16px;
-  padding: 20px 16px;
+  padding: calc(20px + 0.05vw) calc(16px + 0.05vw);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: calc(12px + 0.05vw);
 }
 .intro__form__text {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  gap: 123px;
+  gap: calc(123px + 0.05vw);
 }
 .intro__form__title {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: calc(22px + 0.05vw);
 }
 .intro__form__icons {
   display: flex;
-  gap: 24px;
+  gap: calc(24px + 0.05vw);
 }
 .intro__form__li {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3px;
+  gap: calc(3px + 0.05vw);
 }
 .intro__form__icon {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 14.62px;
+  font-size: calc(12px + 0.05vw);
+  line-height: calc(14.62px + 0.05vw);
 }
 .intro__form__register {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: calc(16px + 0.05vw);
 }
 .intro__form__input--largest {
   max-width: 220px;
 }
 .intro__form__register__button {
-  padding: 11px 41px;
+  padding: calc(11px + 0.05vw) calc(41px + 0.05vw);
   text-wrap: nowrap;
 }
 
@@ -299,20 +297,22 @@ img {
 }
 .games__wrapper {
   flex-direction: column;
-  gap: 24px;
+  gap: calc(24px + 0.05vw);
   z-index: 10;
   position: relative;
-  top: -99px;
+  top: calc(-99px + 0.05vw);
 }
 .games__info {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: self-end;
+  flex-wrap: wrap;
+  gap: calc(16px + 0.05vw);
 }
 .games__link {
   font-weight: 600;
-  line-height: 19.49px;
+  line-height: calc(19.49px + 0.05vw);
 }
 .games__img {
   object-fit: cover;
@@ -320,7 +320,7 @@ img {
   height: 120px;
 }
 .games__author {
-  font-size: 12px;
+  font-size: calc(12px + 0.05vw);
   font-weight: 300;
   opacity: 50%;
 }
@@ -328,17 +328,19 @@ img {
 .games__cards {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: calc(16px + 0.05vw);
 }
 .games__cards--short-images-list {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: calc(16px + 0.05vw);
 }
 .games__cards--long-images-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  justify-items: center;
+  gap: calc(16px + 0.05vw);
 }
 .games__cards--long-images-list > li:nth-child(3) {
   grid-column: 1 / -1;
@@ -355,15 +357,15 @@ img {
 .games__figcaption {
   max-width: 162px;
   position: absolute;
-  top: 16px;
-  left: 12px;
+  top: calc(16px + 0.05vw);
+  left: calc(12px + 0.05vw);
   z-index: 10;
 }
 .games__figcaption__text {
-  font-size: 10px;
+  font-size: calc(10px + 0.05vw);
   font-weight: 400;
-  line-height: 12.18px;
-  margin-bottom: 16px;
+  line-height: calc(12.18px + 0.05vw);
+  margin-bottom: calc(16px + 0.05vw);
 }
 .games__promo {
   display: flex;
@@ -371,7 +373,7 @@ img {
   align-items: center;
 }
 .games_promo_button {
-  padding: 5px 16px;
+  padding: calc(5px + 0.05vw) calc(16px + 0.05vw);
 }
 /*под карточками*/
 .contact__wrapper {
@@ -381,9 +383,9 @@ img {
 .contact__form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 25px;
-  min-width: 400px;
+  gap: calc(16px + 0.05vw);
+  margin-top: calc(25px + 0.05vw);
+  width: 400px;
 }
 .contact__input {
   max-width: 400px;
@@ -396,10 +398,10 @@ img {
 }
 .contact__img {
   position: relative;
-  top: -16px;
+  top: calc(-33px + 0.05vw);
 }
 .contact__button {
-  padding: 9px 39px;
+  padding: calc(9px + 0.05vw) calc(39px + 0.05vw);
 }
 
 /*футер*/
@@ -411,13 +413,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 15px;
+  justify-content: center;
+  padding: calc(24px + 0.05vw) calc(15px + 0.05vw);
 }
 .footer_nav {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  justify-content: center;
+  gap: calc(10px + 0.05vw);
+  margin-bottom: calc(16px + 0.05vw);
 }
 .footer_rules {
   min-width: 100%;
@@ -427,7 +431,7 @@ img {
 .footer_rules::before {
   content: "";
   position: absolute;
-  top: 79px;
+  top: calc(79px + 0.05vw);
   left: 0;
   width: 100%;
   height: 1px;
@@ -436,8 +440,8 @@ img {
   opacity: 10%;
 }
 .footer__li {
-  font-size: 18px;
-  line-height: 21.92px;
+  font-size: calc(18px + 0.05vw);
+  line-height: calc(21.92px + 0.05vw);
 }
 .footer__media {
   min-width: 100%;
@@ -446,13 +450,13 @@ img {
   align-items: center;
 }
 .footer__media__text {
-  font-size: 14px;
+  font-size: calc(14px + 0.05vw);
   font-weight: 300;
-  line-height: 17.05px;
+  line-height: calc(17.05px + 0.05vw);
 }
 .footer__icons {
   display: flex;
-  gap: 12px;
+  gap: calc(12px + 0.05vw);
 }
 
 /*лоадер*/
@@ -511,7 +515,7 @@ img {
   );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(58, 64, 84, 1);
-  padding: 20px;
+  padding: calc(20px + 0.05vw);
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   width: 300px;
@@ -519,29 +523,65 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: calc(20px + 0.05vw);
 }
 .popup__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: calc(20px + 0.05vw);
 }
 .popup__button {
-  padding: 11px 22px;
+  padding: calc(11px + 0.05vw) calc(22px + 0.05vw);
 }
 
+@media (max-width: 900px) {
+  .contact__img {
+    display: none;
+  }
+  .contact__wrapper {
+    justify-content: center;
+  }
+}
 @media (max-width: 800px) {
+  #games {
+    height: 100%;
+    padding: 15px 0;
+  }
   .games__cards {
     flex-direction: column;
   }
   .games__wrapper {
     top: 0;
   }
-  #games {
-    height: 1350px;
-  }
   .contact__img {
     display: none;
+  }
+  .header__link {
+    display: none;
+  }
+  .intro__form__register {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .intro__form__text {
+    flex-direction: column;
+    align-items: center;
+    gap: calc(16px + 0.05vw);
+  }
+  .contact__form {
+    width: 100%;
+  }
+  .intro__form__register {
+    justify-content: center;
+  }
+  .games__cards--short-images-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .intro__buttons {
+    flex-direction: column;
   }
 }
