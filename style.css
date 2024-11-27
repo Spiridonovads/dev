@@ -69,8 +69,8 @@ img {
 /*общее*/
 .wrapper {
   max-width: 1070px;
+  padding: 0 calc(15px + 0.05vw);
   width: 100%;
-  padding: 0 15px;
   display: flex;
 }
 .button {
@@ -184,15 +184,13 @@ img {
 #intro {
   width: 100vw;
   min-height: 674px;
+  display: flex;
+  justify-content: center;
   background-image: url("./images/intro/intro.png");
   background-size: 105% 140%;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: calc(32px + 0.05vw);
-  z-index: 4;
 }
 .intro__wrapper {
   flex-direction: column;
@@ -234,12 +232,13 @@ img {
   display: flex;
   flex-direction: column;
   gap: calc(12px + 0.05vw);
+  max-width: 864px;
+  width: 100%;
 }
 .intro__form__text {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  gap: calc(123px + 0.05vw);
 }
 .intro__form__title {
   text-transform: uppercase;
@@ -252,6 +251,7 @@ img {
 .intro__form__li {
   display: flex;
   gap: calc(3px + 0.05vw);
+  flex-wrap: wrap;
 }
 .intro__form__icon {
   font-weight: 600;
@@ -338,12 +338,13 @@ img {
 }
 .games__cards--long-images-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
   gap: calc(16px + 0.05vw);
 }
 .games__cards--long-images-list > li:nth-child(3) {
   grid-column: 1 / -1;
+  justify-self: stretch;
 }
 .games__cards--long-images-list > li:nth-child(3) img {
   width: 100%;
